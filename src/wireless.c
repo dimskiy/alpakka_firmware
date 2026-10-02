@@ -176,7 +176,7 @@ void wireless_dongle_heartbeat_task() {
         };
         uart_write_blocking(ESP_UART, message, sizeof(message));
         heartbeat_sent_time = timestamp;
-        info("Heartbeat sent\n");
+        debug("Heartbeat sent\n");
     }
 }
 
