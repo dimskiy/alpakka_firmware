@@ -12,7 +12,7 @@ else
     HEADER_OLD=''
 fi
 
-HEADER_NEW="#define VERSION \"${TAG}\""
+HEADER_NEW="#define VERSION \"${TAG}-mod_dimskiy\""
 if [ "$HEADER_NEW" != "$HEADER_OLD" ]; then
     echo "Overwriting version file"
     echo $HEADER_NEW > $HEADER_PATH
